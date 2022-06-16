@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins' sans-serif;
+}
+
+body {
+    background-image: url("images/bg-intro-desktop.png");
+    background-color: hsl(0, 100%, 74%);
+    background-blend-mode: overlay;
+    font-size: 16px;
+}
+
+.parent-container {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 30px;
+}
+
+h1{
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+
+.right {
+    width: 50vw;
+    height: auto;
+    background-color: inherit;
+    margin: 50px;
+    text-align: center;
+    font-family: 'Poppins' sans-serif;
+}
+
+.left {
+    width: 50vw;
+    height: auto;
+    font-family: 'Poppins' sans-serif;
+    justify-items: center;
+    margin: 50px;
+    color: white;
+}
+
+#top-right {
+    text-align: center;
+    background-color: rgb(79, 77, 172);
+    box-shadow: 0 8px 2px -2px grey;
+    border: 1px solid rgb(79, 77, 172);
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+    font-family: 'Poppins';
+    font-size: 12px;
+    color: white;
+}
+
+form {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+input {
+    display: block;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 18px;
+    color: hsl(249, 10%, 26%);
+    padding: 15px;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+input:focus {
+    outline: hsl(249, 10%, 26%) bold;
+    color: hsl(249, 10%, 26%);
+}
+
+input:active {
+    color: hsl(249, 10%, 26%);
+}
+
+button {
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    width: 100%;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 1px solid hsl(154, 59%, 51%);
+    border-radius: 10px;
+    box-shadow: 0 8px 2px -2px hsl(155, 36%, 35%);
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0 8px 2px -2px grey;
+}
+
+form a {
+    color: red;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+}
+form a:hover {
+    color: rgb(124, 35, 35);
+}
+
+@media screen and (max-width:660px) {
+    .parent-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (min-width:1100px) {
+    .parent-container {
+        font-size: 20px;
+    }
+}
