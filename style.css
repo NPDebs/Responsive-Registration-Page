@@ -63,7 +63,7 @@ form {
     border-radius: 10px;
 }
 
-input {
+.form-control input {
     display: block;
     font-family: inherit;
     font-weight: 700;
@@ -81,7 +81,7 @@ input:focus {
 }
 
 input:active {
-    color: hsl(249, 10%, 26%);
+    color: hsl(249, 16%, 34%);
 }
 
 button {
@@ -111,6 +111,48 @@ form a:hover {
     color: rgb(124, 35, 35);
 }
 
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control.success input {
+    border-color: rgb(101, 175, 101);
+}
+.form-control.error input {
+    border-color: rgb(236, 77, 77);
+}
+
+.form-control i {
+    position: absolute;
+    visibility: hidden;
+    top: 20px;
+    right: 10px;
+}
+.form-control.success i.fa-circle-check {
+    visibility: visible;
+    color: rgb(101, 175, 101);
+}
+.form-control.error i.fa-exclamation-circle {
+    visibility: visible;
+    color: rgb(236, 77, 77);
+}
+.form-control small {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.form-control.success small {
+    color: rgb(101, 175, 101);
+}
+.form-control.error small {
+    visibility: visible;
+    font-style: inherit;
+    font-size: 14px;
+    color: rgb(236, 77, 77);
+}
 @media screen and (max-width:660px) {
     .parent-container {
         display: flex;
