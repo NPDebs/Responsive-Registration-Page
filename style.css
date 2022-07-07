@@ -116,6 +116,23 @@ form a:hover {
         display: flex;
         flex-direction: column;
     }
+    input {
+        font-weight: 600;
+        font-size: 15px;
+        width: 100%;
+        height: auto;
+        margin-top: 15px;
+    }
+    .left { 
+            margin: 30px;
+            width: 55vw;
+    }
+    .right  {
+        width: 65vw;
+        height: auto;
+        margin: 30px;
+    }
+    
 }
 @media screen and (min-width:1100px) {
     .parent-container {
